@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCESS REQUIRED</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="mystery-box">
+            <div class="glitch-text" data-text="ACCESS REQUIRED">ACCESS REQUIRED</div>
+            <div class="subtitle">Enter Code</div>
+            
+            <form id="passwordForm" class="password-form">
+                <input 
+                    type="password" 
+                    id="passwordInput" 
+                    class="password-input" 
+                    placeholder="••••••••"
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Submit</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </form>
+            
+            <div id="errorMessage" class="error-message"></div>
+            
+            <div class="hint">
+                <span class="hint-icon">?</span>
+                <span class="hint-text">Multiple codes available...</span>
+            </div>
+        </div>
+        
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

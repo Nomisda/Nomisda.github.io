@@ -1,6 +1,6 @@
 const passwords = {
-    'shadow': 'secret1.html',
-    'enigma': 'secret2.html',
+    '389': 'chellterra.html',
+    'weristderdieb': 'Nr2.html',
     'phantom': 'secret3.html',
     'cipher': 'secret4.html'
 };
@@ -15,14 +15,14 @@ form.addEventListener('submit', (e) => {
     const enteredPassword = passwordInput.value.toLowerCase().trim();
     
     if (passwords[enteredPassword]) {
-        errorMessage.textContent = 'ACCESS GRANTED...';
+        errorMessage.textContent = 'Sauber';
         errorMessage.style.color = '#00ff41';
         
         setTimeout(() => {
             window.location.href = passwords[enteredPassword];
         }, 1000);
     } else {
-        errorMessage.textContent = 'ACCESS DENIED. INVALID CODE.';
+        errorMessage.textContent = 'Versuche es nochmal';
         errorMessage.style.color = '#ff0040';
         passwordInput.value = '';
         passwordInput.classList.add('shake');

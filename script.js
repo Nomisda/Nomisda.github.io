@@ -1,8 +1,7 @@
 const passwords = {
     '389': 'chellterra.html',
     'weristderdieb': 'Nr2.html',
-    'phantom': 'secret3.html',
-    'cipher': 'secret4.html'
+    'beta': 'beta.html',
 };
 
 const form = document.getElementById('passwordForm');
